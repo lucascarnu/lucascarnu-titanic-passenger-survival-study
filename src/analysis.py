@@ -33,12 +33,12 @@ print(data.duplicated().sum())
 
 # Passengers younger than 10
 print("\nPassengers younger than 10:")
-print(data[data["Age"] <= 10].head())
+print(data[data["age"] <= 10].head())
 
 # Survival rate by gender
 print("\nSurvival by gender:")
-print(data.groupby("Sex")["Survived"].mean())
+print(data.groupby("sex")["survived"].mean())
 
 # Survival rate by passenger class
 print("\nSurvival by class:")
-print(data.groupby("Pclass")["Survived"].mean())
+print(data.groupby("pclass")["survived"].mean())
