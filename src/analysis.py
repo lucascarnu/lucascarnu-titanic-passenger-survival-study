@@ -72,3 +72,14 @@ plt.title("Age Distribution of Passengers")
 plt.xlabel("Age")
 plt.ylabel("Number of Passengers")
 plt.show()
+
+# Survival rate by age group
+print("\nSurvival rate by age group:")
+
+data["age_group"] = pd.cut(
+    data["age"],
+    bins=[0, 12, 18, 35, 60, 100],
+    labels=["Child", "Teen", "Young Adult", "Adult", "Senior"]
+)
+
+print(data.groupby("age_group")["survived"].mean())
