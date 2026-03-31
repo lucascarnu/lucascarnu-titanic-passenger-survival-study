@@ -5,6 +5,11 @@
 **Program:** SCTEC / LAB365  
 **Year:** 2026
 
+## Repository
+
+GitHub repository:
+https://github.com/lucascarnu/lucascarnu-titanic-passenger-survival-study
+
 ## Project Overview
 This project explores the Titanic passenger dataset using Python and data analysis libraries. The goal is to examine patterns that may help explain why some passengers survived while others did not.
 
